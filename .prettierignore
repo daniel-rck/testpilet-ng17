@@ -1,0 +1,7 @@
+.angular
+.eslintrc.json
+.vscode
+*.sln
+**/*.min.css
+dist
+www

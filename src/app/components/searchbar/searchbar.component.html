@@ -1,0 +1,5 @@
+<div class="searchbar-wrapper">
+  <img class="search-icon" [src]="'svgs/search_white_24dp.svg' | resourceUrl" />
+  <input type="text" class="searchbar-input" placeholder="{{ currentFolder }} durchsuchen" [(ngModel)]="searchFilter" (ngModelChange)="emitSearchFilter()" />
+  <img class="close-icon" [src]="'svgs/close_white_24dp.svg' | resourceUrl" (click)="resetSearchFilter()" *ngIf="searchFilter != ''" />
+</div>

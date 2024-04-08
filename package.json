@@ -1,0 +1,70 @@
+{
+  "name": "testpilet-ng17",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "scripts": {
+    "start": "pilet debug --open",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade",
+    "postinstall": "pilet declaration",
+    "prettier": "prettier . --write"
+  },
+  "dependencies": {
+    "@angular/common": "^17",
+    "@angular/compiler": "^17",
+    "@angular/core": "^17",
+    "@angular/platform-browser": "^17",
+    "@angular/platform-browser-dynamic": "^17",
+    "@angular/router": "^17",
+    "core-js": "^3.19.0",
+    "piral-ng": "1.5.2",
+    "piral-ng-common": "^17",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.12.0",
+    "rxjs": "^7.4",
+    "zone.js": "0.14.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^17",
+    "@angular/compiler-cli": "^17",
+    "@ngtools/webpack": "^17",
+    "@types/node": "latest",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "copy-webpack-plugin": "^10",
+    "html-loader": "^3",
+    "piral-cli": "1.5.2",
+    "piral-cli-webpack5": "1.5.2",
+    "prettier": "^3.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "sample-piral": "1.5.2",
+    "to-string-loader": "^1",
+    "tslib": "2.5.2",
+    "typescript": "~5.2"
+  },
+  "importmap": {
+    "inherit": [
+      "sample-piral"
+    ],
+    "imports": {
+      "@angular/common": "",
+      "@angular/compiler": "",
+      "@angular/core": "",
+      "@angular/platform-browser": "",
+      "@angular/platform-browser-dynamic": "",
+      "@angular/router": "",
+      "piral-ng-common": ""
+    }
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "source": "src/index.tsx"
+}

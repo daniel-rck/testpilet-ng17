@@ -1,0 +1,49 @@
+# Exclude compiled files
+dist
+src/converters/*/lib
+src/framework/*/lib
+src/initializers/*/lib
+src/packages/*/lib
+src/pages/*/lib
+src/plugins/*/lib
+src/samples/*/lib
+src/templates/*/lib
+src/tooling/*/lib
+src/utilities/*/lib
+src/converters/*/esm
+src/framework/*/esm
+src/initializers/*/esm
+src/packages/*/esm
+src/pages/*/esm
+src/plugins/*/esm
+src/samples/*/esm
+src/templates/*/esm
+src/tooling/*/esm
+src/utilities/*/esm
+src/converters/piral-ng/common
+src/converters/*/convert.d.ts
+src/converters/*/convert.js
+src/**/*.min.js
+__generated__
+
+# OS files
+.DS_STORE
+
+# npm files
+node_modules
+yarn.lock
+*.log
+
+# Editor files
+.idea
+.vscode
+.vs
+*.sublime-project
+*.sublime-workspace
+
+coverage
+.cache
+.nyc_output
+
+# Generated Typings
+docs/types/*.json

@@ -1,0 +1,11 @@
+<h1>More Routing</h1>
+<ul>
+  <li><a routerLink="/foo/one">First page.</a></li>
+  <li><a routerLink="/page">React page.</a></li>
+  <div style="background-color: red">
+    <app-searchbar (searchFilterEmitter)="setSearchFilter($event)"></app-searchbar>
+  </div>
+  <div style="background-color: blue">
+    <app-searchbar (searchFilterEmitter)="setSearchFilter($event)"></app-searchbar>
+  </div>
+</ul>
