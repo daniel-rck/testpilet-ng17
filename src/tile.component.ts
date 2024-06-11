@@ -1,4 +1,5 @@
 import { Component, Inject, VERSION } from '@angular/core';
+import { PiletApi } from 'sample-piral';
 
 @Component({
   template: `
@@ -10,11 +11,11 @@ import { Component, Inject, VERSION } from '@angular/core';
     </div>
   `,
 })
-export class Tile {
+export class TileComponent {
   public counter = 0;
   public version = VERSION.full;
 
-  constructor(@Inject('piral') piral: any) {
+  constructor(@Inject('piral') piral: PiletApi) {
     console.log('Tile rendered', piral.meta);
   }
 

@@ -1,4 +1,4 @@
-import { Inject, Injectable, inject } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { PiletApi } from 'sample-piral';
 
 @Injectable({

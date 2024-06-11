@@ -1,5 +1,12 @@
 <div class="searchbar-wrapper">
-  <img class="search-icon" [src]="'svgs/search_white_24dp.svg' | resourceUrl" />
+  <img class="search-icon" [src]="'svgs/search_white_24dp.svg' | resourceUrl" alt="search" />
   <input type="text" class="searchbar-input" placeholder="{{ currentFolder }} durchsuchen" [(ngModel)]="searchFilter" (ngModelChange)="emitSearchFilter()" />
-  <img class="close-icon" [src]="'svgs/close_white_24dp.svg' | resourceUrl" (click)="resetSearchFilter()" *ngIf="searchFilter != ''" />
+  <img
+    class="close-icon"
+    [src]="'svgs/close_white_24dp.svg' | resourceUrl"
+    (click)="resetSearchFilter()"
+    *ngIf="searchFilter !== ''"
+    alt="close"
+    tabindex="-1"
+    (keypress)="resetSearchFilter()" />
 </div>
